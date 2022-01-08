@@ -1,0 +1,11 @@
+# Turn on rewrite engine
+Options +FollowSymlinks
+RewriteEngine on
+
+# Request routing
+RewriteRule ^([^/.]+)$ index.php?page=$1 [QSA,L]
+
+
+
+
+
